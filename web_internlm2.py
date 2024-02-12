@@ -31,6 +31,8 @@ from openxlab.model import download
 
 logger = logging.get_logger(__name__)
 
+download(model_repo='Smiling-Weeping-zhr/Travel-assistant', 
+        output='model')
 
 @dataclass
 class GenerationConfig:
@@ -187,7 +189,6 @@ def load_model():
     )
     tokenizer = AutoTokenizer.from_pretrained("model", trust_remote_code=True)
     return model, tokenizer
-    return model, tokenizer
 
 
 def prepare_generation_config():
@@ -236,10 +237,10 @@ def main():
     model, tokenizer = load_model()
     print('load model end.')
 
-    user_avator = '/root/code/InternLM/assets/user.png'
-    robot_avator = '/root/code/InternLM/assets/robot.png'
+    user_avator = 'assets/user.jpg'
+    robot_avator = 'assets/robot.jpg'
 
-    st.title('InternLM2-Chat-7B')
+    st.title('盐城旅游小助手')
 
     generation_config = prepare_generation_config()
 
