@@ -1,17 +1,11 @@
-"""This script refers to the dialogue example of streamlit, the interactive
-generation code of chatglm2 and transformers.
-
-We mainly modified part of the code logic to adapt to the
-generation of our model.
+"""
+This script refers to the dialogue example of streamlit, the interactive generation code of chatglm2 and transformers.
+We mainly modified part of the code logic to adapt to the generation of our model.
 Please refer to these links below for more information:
-    1. streamlit chat example:
-        https://docs.streamlit.io/knowledge-base/tutorials/build-conversational-apps
-    2. chatglm2:
-        https://github.com/THUDM/ChatGLM2-6B
-    3. transformers:
-        https://github.com/huggingface/transformers
-Please run with the command `streamlit run path/to/web_demo.py
-    --server.address=0.0.0.0 --server.port 7860`.
+    1. streamlit chat example: https://docs.streamlit.io/knowledge-base/tutorials/build-conversational-apps
+    2. chatglm2: https://github.com/THUDM/ChatGLM2-6B
+    3. transformers: https://github.com/huggingface/transformers
+Please run with the command `streamlit run path/to/web_demo.py --server.address=0.0.0.0 --server.port 7860`.
 Using `python path/to/web_demo.py` may cause unknown problems.
 """
 # isort: skip_file
